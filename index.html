@@ -1,0 +1,388 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T.V.A. – Buget. Profit. Prețuri.</title>
+  <link rel="stylesheet" href="css/style%20(2).css" />
+  <!-- Chart.js for Budget Planner pie chart -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-logo">
+      <!-- SVG logo matching the Canva bars icon -->
+      <svg class="logo-icon" viewBox="0 0 40 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="8" width="10" height="20" rx="2" fill="#2ECC71"/>
+        <rect x="14" y="0" width="10" height="28" rx="2" fill="#2ECC71"/>
+        <rect x="28" y="4" width="10" height="24" rx="2" fill="#2ECC71"/>
+      </svg>
+      <span class="logo-text">T.V.A.</span>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="#" class="nav-link active" data-section="home">Acasă</a></li>
+      <li><a href="#" class="nav-link" data-section="introducere">Introducere</a></li>
+      <li><a href="#" class="nav-link" data-section="notiuni">Noțiuni</a></li>
+      <li><a href="#" class="nav-link" data-section="exemple">Exemple</a></li>
+      <li><a href="#" class="nav-link nav-link-budget" data-section="budget">Budget Planer</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== HOME SECTION ===================== -->
+  <section class="section active" id="section-home">
+    <!-- Money background overlay -->
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">BUGET. PROFIT. PREȚURI.</h1>
+      <p class="hero-subtitle">Elemente de statistică matematică și calcul financiar</p>
+    </div>
+    <div class="hero-footer">
+      <div class="hero-footer-left">
+        <p>Profesoară: Sîrbu Mihaela</p>
+        <p>Elaborat de: Ceban Tudor, Sîrbu Victor, Palii Arina</p>
+      </div>
+      <div class="hero-footer-center">
+        <p>2026</p>
+      </div>
+      <div class="hero-footer-right">
+        <p>L. T. "Emil Nicula"&nbsp; clasa XII – "B"</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INTRODUCERE SECTION ===================== -->
+  <section class="section" id="section-introducere">
+    <div class="intro-top">
+      <div class="intro-left">
+        <h2 class="intro-title">Introducere</h2>
+        <p class="intro-text">
+          În fiecare zi luăm decizii legate de bani, cât cheltuim,
+          economisim și cum stabilim prețurile, iar matematica ne ajută
+          să înțelegem și să gestionăm mai bine bugetul și profitul.
+        </p>
+      </div>
+      <div class="intro-right">
+        <h3 class="cuprins-title">CUPRINS</h3>
+        <ol class="cuprins-list">
+          <li><span class="cuprins-num">01</span><span>Noțiuni teoretice</span></li>
+          <li><span class="cuprins-num">02</span><span>Probleme rezolvate</span></li>
+          <li><span class="cuprins-num">03</span><span>Planer de budget</span></li>
+        </ol>
+      </div>
+    </div>
+    <!-- Money image strip at bottom -->
+    <div class="intro-image-strip"></div>
+  </section>
+
+  <!-- ===================== NOTIUNI SECTION (scrollable) ===================== -->
+  <section class="section scrollable" id="section-notiuni">
+    <div class="notiuni-inner">
+
+      <!-- Slide 3: Bugetul -->
+      <div class="notiuni-slide notiuni-slide-right">
+        <div class="notiuni-img-col">
+          <div class="notiuni-img notiuni-img-hundreds"></div>
+        </div>
+        <div class="notiuni-card green-card">
+          <div class="notiuni-card-title-box">BUGETUL</div>
+          <p>
+            Bugetul este totalitatea prevederilor de venituri (cu indicarea lor)
+            și de cheltuieli (cu indicarea destinației) pentru o anumită perioadă.
+            Bugetul trebuie întocmit astfel încât să prevadă cheltuielile obligatorii
+            (alimente, transport, taxe, …), precum și acumulări pentru cheltuieli
+            neprevăzute sau pentru realizarea unei afaceri costisitoare.
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 4: Prețuri -->
+      <div class="notiuni-slide notiuni-slide-left">
+        <div class="notiuni-card green-card">
+          <div class="notiuni-card-title-box">PREȚURI</div>
+          <p>
+            Prețul de cost (de producție) este prețul care reflectă totalitatea cheltuielilor
+            pentru producerea unui bun (produs). Prețul de cost include cheltuielile legate de
+            forța de muncă, mijloacele de producție (materie primă, energie, închirierea spațiului,
+            utilaj ș.a.), eventual și cheltuielile de desfacere.
+          </p>
+        </div>
+        <div class="notiuni-img-col">
+          <div class="notiuni-img notiuni-img-cards"></div>
+        </div>
+      </div>
+
+      <!-- Slide 5: Profitul & Rentabilitatea -->
+      <div class="notiuni-slide notiuni-slide-full">
+        <div class="notiuni-card green-card two-col-card">
+          <div class="two-col-left">
+            <div class="notiuni-card-title-box">PROFITUL</div>
+            <p>
+              Profitul total (brut) P al unității economice este diferența dintre veniturile
+              încasate V și cheltuielile suportate C într-o anumită perioadă de timp:
+            </p>
+            <div class="formula"><em>P = V – C</em></div>
+          </div>
+          <div class="two-col-right">
+            <div class="notiuni-card-title-box">RENTABILITATEA ECONOMICĂ</div>
+            <p>
+              Gradul de rentabilitatea unei întreprinderi, deci potențialul acesteia de a crea
+              profit, este determinat de rentabilitatea economica:
+            </p>
+            <div class="formula"><em>R<sub>ec</sub> = P/K<sub>P</sub></em></div>
+          </div>
+        </div>
+        <p class="formula-legend">
+          <strong>P</strong> - profitul total brut,&nbsp;
+          <strong>K<sub>P</sub></strong> - mărimea capitalului permanent,&nbsp;
+          <strong>V</strong> - veniturile încasate,&nbsp;
+          <strong>C</strong> - cheltuielile suportate
+        </p>
+        <div class="notiuni-img notiuni-img-stocks"></div>
+      </div>
+
+      <!-- Slide 6: TVA -->
+      <div class="notiuni-slide notiuni-slide-left">
+        <div class="notiuni-card green-card">
+          <div class="notiuni-card-title-box tva-title-box">TVA</div>
+          <p>
+            <strong>(taxa pe valoarea adăugată)</strong> este un impozit (în folosul statului)
+            care se stabilește asupra operațiunilor privind transferul proprietății bunurilor sau
+            asupra operațiunilor privind prestările de servicii (în cadrul exercitării activității
+            profesionale). TVA se calculează din mărimea venitului pe care vrea să-l încaseze
+            proprietarul bunului. La fiecare operațiune de schimb al proprietarului, în bugetul
+            de stat se transferă diferența:
+          </p>
+          <div class="formula"><em>T<sub>1</sub> – T<sub>2</sub></em></div>
+          <p class="tva-sub">
+            <em>T<sub>1</sub></em> fiind TVA calculată la operațiunea curentă și
+            <em>T<sub>2</sub></em> – TVA calculată la operațiunea precedentă (și achitată de
+            proprietarul precedent). Deci, în bugetul statului se transferă taxele pentru valorile
+            adăugate de fiecare proprietar. Aceste taxe se adaugă de fiecare dată la preț și sunt
+            achitate în final de consumator.
+          </p>
+        </div>
+        <div class="notiuni-img-col">
+          <div class="notiuni-img notiuni-img-dollars"></div>
+        </div>
+      </div>
+
+      <!-- Slide 7: Exemplu TVA schema -->
+      <div class="notiuni-slide notiuni-slide-full schema-slide">
+        <div class="notiuni-card green-card schema-card">
+          <div class="schema-header">
+            <span class="exemplu-badge">Exemplu</span>
+            <p>
+              E bine să știm că nu toată suma de bani plătită de un cumpărător la un magazin îi
+              revine producătorului bunului procurat. În linii mari, prețul (achitat de cumpărător)
+              se formează conform următoarei scheme:
+            </p>
+          </div>
+          <div class="tablo">
+              <img src="css/images/Screenshot_73.png" alt="Description">
+          </div>
+          <!--<div class="schema-body">
+            <div class="schema-left">
+              <div class="schema-item dark-item">Prețul de producție</div>
+              <div class="schema-plus">+</div>
+              <div class="schema-item dark-item">Adaosul (profitul) producătorului</div>
+              <div class="schema-plus">+</div>
+              <div class="schema-item dark-tva">TVA</div>
+              <div class="schema-plus">+</div>
+              <div class="schema-item dark-item">Adaos comercial</div>
+              <div class="schema-plus">+</div>
+              <div class="schema-item dark-tva">TVA</div>
+            </div>
+            <div class="schema-brace">
+              <svg viewBox="0 0 40 340" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 5 10 Q 35 10 35 90 Q 35 170 5 170 Q 35 170 35 250 Q 35 330 5 330"
+                  stroke="black" stroke-width="3" fill="none"/>
+              </svg>
+            </div>
+            <div class="schema-right">
+              <div class="schema-arrow-row">
+                <span class="schema-arrow">→</span>
+                <p>Suma totală pe care o încasează producătorul din vânzare, sau prețul de achiziție al comerciantului.</p>
+              </div>
+              <div class="schema-arrow-row">
+                <span class="schema-arrow">→</span>
+                <p>Suma pe care o încasează comerciantul la vânzare (prețul final).</p>
+              </div>
+            </div>
+          </div>-->
+        </div>
+      </div>
+
+    </div><!-- end notiuni-inner -->
+  </section>
+
+  <!-- ===================== EXEMPLE SECTION ===================== -->
+  <section class="section" id="section-exemple">
+    <div class="exemple-wrapper">
+
+      <!-- Problem 1: Trotinete -->
+      <div class="exemple-block">
+        <h2 class="exemple-heading">Probleme:</h2>
+        <div class="exemple-card">
+          <p class="exemple-problem">
+            Pentru producerea a 15 trotinete s-au cheltuit în total 2040 u.m., și în urma vânzărilor
+            întreprinderea a obținut un profit de 244,8 u.m. Să se afle prețul de vânzare al unei trotinete,
+            dacă TVA a fost de 10%.
+          </p>
+          <div class="exemple-solution">
+            <p>2040 : 15 = 136 u.m. – costul unei trotinete</p>
+            <p>244,8 / 15 = 16,324 u.m. – profitul pe o trotinetă</p>
+            <p>136 + 16,32 = 152,32 u.m. – prețul trotinetei fără TVA</p>
+            <p>152,32 * 1,10 = 167,55 u.m. – prețul trotinetei</p>
+            <p class="raspuns">Răspuns: Prețul de vânzare a unei trotinete este de 167,55 u.m.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Problem 2 & 3 side by side -->
+      <div class="exemple-row">
+
+        <!-- Problem 2: Credit dobândă -->
+        <div class="exemple-card exemple-card-half">
+          <p class="exemple-problem">
+            Un credit de 10 000 u.m. se achită peste 10 ani. Ce sumă se achită în total dacă rata anuală
+            a dobânzii compuse (cu capitalizare anuală) este de: a) 10%; b) 16%?
+          </p>
+          <div class="exemple-solution">
+            <p class="formula-line">S = S₀ (1 + P/100)<sup>n</sup> &nbsp;– formula dobânzii compuse</p>
+            <div class="exemple-cols">
+              <div>
+                <p>a) S₁₀ = 10000(1 + 10/100)<sup>10</sup></p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;S₁₀ = 10000 × 2,593742</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;S₁₀ = 2593,42 u.m.</p>
+              </div>
+              <div>
+                <p>b) S₁₀ = 10000(1 + 16/100)<sup>10</sup></p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;S₁₀ = 10000 × 4,4114</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;S₁₀ = 441 144 u.m.</p>
+              </div>
+            </div>
+            <p class="raspuns">Răspuns: a) S₁₀ = 2593,42 u.m. &nbsp; b) S₁₀ = 441 144 u.m.</p>
+          </div>
+        </div>
+
+        <!-- Problem 3: Familie buget -->
+        <div class="exemple-card exemple-card-half">
+          <p class="exemple-problem">
+            Venitul anual al unei familii este de 120 000 u.m. a) În bugetul anual al familiei este
+            preconizată pentru vacanță suma de 16 000 u.m. Ce procent reprezintă această sumă din
+            venitul familiei? b) Ce sumă trebuie preconizată pentru alimente dacă cota lor în bugetul
+            familiei este de 22%?
+          </p>
+          <div class="exemple-solution">
+            <div class="exemple-cols">
+              <div>
+                <p>a) p = partea/total × 100</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;p = 16000/120000 × 100</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;p = 0,1333 × 100</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;p = 13,33%</p>
+              </div>
+              <div>
+                <p>b) S = 22/100 × 120000</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;S = 0,22 × 120000</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;S = 26400</p>
+              </div>
+            </div>
+            <p class="raspuns">Răspuns: a) p = 13,33% &nbsp; b) S = 26400</p>
+          </div>
+        </div>
+
+      </div><!-- end exemple-row -->
+      <div class="concluzie">
+          <h2 class="concl">Concluzie</h2>
+          <p class="concl-text">În concluzie, prețul, bugetul și profitul sunt concepte matematice esențiale care ne ajută să înțelegem modul în care funcționează activitățile economice. Prin calcule și relații matematice, putem determina costurile, veniturile și câștigul obținut. Astfel, matematica nu este prezentă doar în teorie, ci și în viața de zi cu zi, ajutându-ne să luăm decizii corecte și să gestionăm eficient resursele financiare.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BUDGET PLANER SECTION ===================== -->
+  <section class="section" id="section-budget">
+    <div class="planner-wrapper">
+      <div class="banner-img"></div>
+      <div class="dashboard-grid">
+
+        <!-- Income + Expense tables -->
+        <div class="tables-area">
+          <div class="box">
+            <div class="box-header">Venit</div>
+            <table id="incomeTable">
+              <tbody class="data-body">
+                <tr><td contenteditable="true">Salariu</td><td class="val-cell" contenteditable="true">7000</td></tr>
+              </tbody>
+            </table>
+            <button class="add-btn" onclick="addRow('incomeTable')">+ Adaugă Venit</button>
+          </div>
+          <div class="box">
+            <div class="box-header">Cheltuieli</div>
+            <table id="expenseTable">
+              <tbody class="data-body">
+                <tr><td contenteditable="true">Chirie</td><td class="val-cell" contenteditable="true">1200</td></tr>
+                <tr>
+                <td contenteditable="true">Alimente</td><td class="val-cell" contenteditable="true">800</td></tr>
+                <tr><td contenteditable="true">Haine</td><td class="val-cell" contenteditable="true">400</td></tr>
+                <tr><td contenteditable="true">Studii</td><td class="val-cell" contenteditable="true">1000</td></tr>
+                <tr><td contenteditable="true">Transport</td><td class="val-cell" contenteditable="true">400</td></tr>
+              </tbody>
+            </table>
+            <button class="add-btn" onclick="addRow('expenseTable')">+ Adaugă Cheltuieli</button>
+          </div>
+        </div>
+
+        <!-- Pie chart -->
+        <div class="chart-container">
+          <canvas id="expenseChart"></canvas>
+        </div>
+
+        <!-- Summary box + Calculator column -->
+        <div class="summary-col">
+
+          <div class="box summary-box">
+            <div class="summary-item">
+              <span class="summary-label">Total Venit</span>
+              <span class="summary-value" id="statIncome">0.00 MDL</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-label">Total Cheltuieli</span>
+              <span class="summary-value" id="statSpent">0.00 MDL</span>
+            </div>
+            <div class="summary-item remaining-highlight">
+              <span class="summary-label">Rămas</span>
+              <span class="summary-value" id="statRemaining">0.00 MDL</span>
+            </div>
+          </div>
+
+          <!-- Calculator de Economii -->
+          <div class="box calc-box">
+            <div class="box-header">Calculator de Economii</div>
+            <div class="calc-body">
+              <input type="number" id="venit" class="calc-input" placeholder="Venit lunar (ex: 5000)" />
+              <input type="number" id="suma"  class="calc-input" placeholder="Suma dorită (ex: 20000)" />
+              <input type="number" id="procent" class="calc-input" placeholder="Procent economisit (ex: 20)" />
+              <button class="add-btn calc-run-btn" onclick="calculeaza()">Calculează acum</button>
+              <div id="rezultate" class="calc-results">
+                <p>Economie lunară: <strong id="val-lunar"></strong></p>
+                <p>Timp necesar: <strong id="val-timp"></strong> luni</p>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- end summary-col -->
+
+      </div><!-- end dashboard-grid -->
+    </div><!-- end planner-wrapper -->
+  </section>
+
+  <script src="java.js"></script>
+</body>
+</html>
